@@ -18,7 +18,7 @@ class DontHaveAnAccount extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const SignUp();
+            return  SignUp();
           })),
           child: Text(
             "Sign up",

@@ -67,8 +67,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
                               await FirebaseAuth.instance.signOut();
                             }
-                            Navigator.pushAndRemoveUntil(context,
-                                MaterialPageRoute(builder: (context) => const LogIn()), (route) => false);
+                            Navigator.pushAndRemoveUntil(
+                                context, MaterialPageRoute(builder: (context) => LogIn()), (route) => false);
                           },
                           child: Text(
                             'Logout',
